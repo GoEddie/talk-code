@@ -128,5 +128,18 @@
     <Build Include="dbo\Tables\txn.sql" />
     <Build Include="dbo\Tables\daily_end_balance.sql" />
     <Build Include="dbo\Stored Procedures\reconcile_accounts.sql" />
+    <Build Include="dbo\Tables\large_table.sql" />
+    <Build Include="dbo\Tables\referenced.sql" />
+    <Build Include="dbo\Stored Procedures\get_balance.sql" />
+    <Build Include="dbo\Stored Procedures\buggy_proc.sql" />
+    <Build Include="dbo\Stored Procedures\proc_that_fails_disasterously.sql" />
+    <Build Include="dbo\Stored Procedures\send_email.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
   </ItemGroup>
 </Project>

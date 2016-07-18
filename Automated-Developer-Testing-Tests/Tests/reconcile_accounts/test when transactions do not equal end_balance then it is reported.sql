@@ -21,4 +21,4 @@ as
     
 	declare @result_count int = (select count(*) from #actual_results);
 
-	execute tSQLt.AssertEquals 1, @result_count, 'Expected one account to fail to reconcile';
+	execute tSQLt.AssertEquals 1, @result_count, 'Expected one account to fail to reconcile';	

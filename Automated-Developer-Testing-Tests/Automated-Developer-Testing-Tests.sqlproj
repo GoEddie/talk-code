@@ -60,6 +60,8 @@
     <Folder Include="Deploy" />
     <Folder Include="Tests" />
     <Folder Include="Tests\reconcile_accounts\" />
+    <Folder Include="Tests\get_balance\" />
+    <Folder Include="Tests\buggy_proc\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Automated-Developer-Testing\Automated-Developer-Testing\Automated-Developer-Testing.sqlproj">
@@ -85,7 +87,11 @@
     <Build Include="Tests\reconcile_accounts\test when transaction amounts are the same as end_balance all accounts will reconcile.sql" />
     <Build Include="Tests\reconcile_accounts\test when transaction is for different account then it is ignored.sql" />
     <Build Include="Tests\reconcile_accounts\test when transaction outside of the specified dates then it is ignored.sql" />
-    <Build Include="Tests\reconcile_accounts\Copy of test when transaction outside of the specified dates then it is ignored.sql" />
+    <Build Include="Tests\reconcile_accounts\test when transactions do not equal end_balance then it is reported.sql" />
+    <Build Include="Tests\get_balance\get_balance.sql" />
+    <Build Include="Tests\get_balance\test get_balance gets correct balance.sql" />
+    <Build Include="Tests\buggy_proc\buggy_proc.sql" />
+    <Build Include="Tests\buggy_proc\test buggy_proc sends email on failure.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Deploy\Automated-Developer-Testing-Tests.publish.xml" />

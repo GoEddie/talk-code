@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Automated-Developer-Testing", "Automated-Developer-Testing\Automated-Developer-Testing.sqlproj", "{739FC22D-BE9D-42CE-9D87-44FF699BAD70}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Automated-Developer-Testing-Tests", "..\Automated-Developer-Testing-Tests\Automated-Developer-Testing-Tests.sqlproj", "{96FD69EC-E225-48A1-AC3F-0714C3FA749F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".test", ".test", "{670D3E06-BFB6-4876-9B20-893F90E8F240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mstest-tests", "..\mstest-tests\mstest-tests.csproj", "{5A13A565-1968-45D4-8737-C37F36013E47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSIS-Integration-Test", "SSIS-Integration-Test\SSIS-Integration-Test.csproj", "{8258D863-78F3-412C-9622-E936A265A561}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,11 +31,20 @@ Global
 		{96FD69EC-E225-48A1-AC3F-0714C3FA749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96FD69EC-E225-48A1-AC3F-0714C3FA749F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{96FD69EC-E225-48A1-AC3F-0714C3FA749F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5A13A565-1968-45D4-8737-C37F36013E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A13A565-1968-45D4-8737-C37F36013E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A13A565-1968-45D4-8737-C37F36013E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A13A565-1968-45D4-8737-C37F36013E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8258D863-78F3-412C-9622-E936A265A561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8258D863-78F3-412C-9622-E936A265A561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8258D863-78F3-412C-9622-E936A265A561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8258D863-78F3-412C-9622-E936A265A561}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{96FD69EC-E225-48A1-AC3F-0714C3FA749F} = {670D3E06-BFB6-4876-9B20-893F90E8F240}
+		{5A13A565-1968-45D4-8737-C37F36013E47} = {670D3E06-BFB6-4876-9B20-893F90E8F240}
 	EndGlobalSection
 EndGlobal
